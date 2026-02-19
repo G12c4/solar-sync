@@ -1,0 +1,7 @@
+{
+  "name": "Solar Sync",
+  "description": "A circadian rhythm alignment app tracking solar cycles, light exposure, and sleep optimization.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
