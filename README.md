@@ -1,20 +1,53 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img width="1200" height="475" alt="Solar Sync Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-45b8-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Solar Sync
 
-This contains everything you need to run your app locally.
+A React/TypeScript app for tracking sun exposure and optimizing circadian rhythms. View sunrise/sunset times, UV index, vitamin D synthesis, and get personalized tips based on your location.
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+## Features
+
+- **Real-time Sun Tracking** - Interactive arc showing sun position throughout the day
+- **7-Day Forecast** - View sunrise/sunset data for the upcoming week
+- **UV Index & Vitamin D** - Track UV levels and vitamin D synthesis status
+- **Circadian Tips** - Personalized recommendations based on time of day
+- **Location Aware** - GPS location or manual city selection
+- **Weather Integration** - Current temperature and conditions
+
+## Tech Stack
+
+- React 19 + TypeScript
+- Vite
+- Tailwind CSS
+- Open-Meteo API (weather & geocoding)
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+**Prerequisites:** Node.js 18+
 
+```bash
+npm install
+npm run dev
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Run with Nix
+
+```bash
+make dev    # Run dev server
+make build  # Build production
+make run    # Serve built app
+```
+
+## Configuration
+
+Set your Gemini API key in `.env.local`:
+```
+GEMINI_API_KEY=your_api_key
+```
+
+## Screenshots
+
+| Dashboard | Forecast | Settings |
+|-----------|----------|----------|
+| Sun tracking | 7-day forecast | Location & preferences |
