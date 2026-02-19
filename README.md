@@ -38,16 +38,3 @@ make dev    # Run dev server
 make build  # Build production
 make run    # Serve built app
 ```
-
-## Configuration
-
-Set your Gemini API key in `.env.local`:
-```
-GEMINI_API_KEY=your_api_key
-```
-
-## Screenshots
-
-| Dashboard | Forecast | Settings |
-|-----------|----------|----------|
-| Sun tracking | 7-day forecast | Location & preferences |
